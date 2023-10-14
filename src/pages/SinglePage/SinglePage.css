@@ -1,0 +1,308 @@
+/* Single Page Container */
+#singlePage {
+  padding: 6% 10%;
+}
+
+.singlePageContainer {
+  display: flex;
+  gap: 50px;
+}
+
+/* Left Column Styles */
+.firstLeft p {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+/* Rating Styles */
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.rating span {
+  font-weight: bold;
+  color: #0076ce;
+}
+
+.star {
+  font-size: 25px;
+  color: #0076ce;
+}
+
+/* Second Left Column Styles */
+.secondLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5%;
+  margin-top: 30px;
+  width: 400px;
+  height: 216px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 25px rgb(222, 222, 222);
+}
+
+.basicTask {
+  display: flex;
+  justify-content: space-between;
+}
+
+.basicTask p {
+  font-size: 20px;
+}
+
+.basicTask p span {
+  font-weight: bold;
+}
+
+.secondLeft p {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+.calenderIcon {
+  color: #0076ce;
+}
+
+.taskButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.taskButtons button {
+  width: 160px;
+  height: 46px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.requestBtn {
+  outline: none;
+  border: none;
+  background-color: #0076ce;
+  color: white;
+}
+
+.chatBtn {
+  outline: none;
+  background-color: white;
+  border: 1.5px solid #0076ce;
+  color: #0076ce;
+}
+
+/* Third Left Column Styles */
+.thirdLeft {
+  margin-top: 30px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 25px rgb(222, 222, 222);
+  padding: 5%;
+  width: 400px;
+  height: max-content;
+}
+
+.thirdLeft p {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+/* Right Column Styles */
+.singlePageRight {
+  display: flex;
+  flex-direction: column;
+}
+
+.singlePageRight img {
+  float: right;
+  border-radius: 20px;
+  width: 560px;
+  height: 320px;
+}
+
+.singlePageRight h1 {
+  margin-top: 30px;
+}
+
+/* Details Section Styles */
+.details {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.details div span {
+  font-weight: bold;
+  color: #999999;
+}
+
+.details div p {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.singlePageRight h3 {
+  margin-top: 30px;
+  color: #999999;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Common Styles for Both Columns */
+.singlePageContainer p {
+  margin-top: 20px;
+  line-height: 1.4;
+  font-size: 20px;
+}
+
+/* Services and Benefits Section Styles */
+.services {
+  display: flex;
+  padding: 30px 5% 0 5%;
+  justify-content: space-between;
+}
+
+.services div p {
+  color: #999999;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.services div ul {
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+/* recommended people style  */
+
+.recommendedContainer {
+  display: flex;
+  gap: 5%;
+}
+.recommendedPerson {
+  margin-top: 60px;
+  box-shadow: 5px 5px 25px rgb(199, 199, 199);
+  width: 320px;
+  height: 470px;
+  border-radius: 20px;
+}
+.recommendedPerson img {
+  border-radius: 20px;
+  width: 100%;
+  height: 220px;
+}
+.recommendedDetailsContainer {
+  padding: 4%;
+}
+.recommendedDetailsContainer article {
+  display: flex;
+  justify-content: space-between;
+}
+.recommendedDetailsContainer article span {
+  font-size: 20px;
+  font-weight: bold;
+}
+.star2 {
+  margin-top: 2px;
+  font-size: 20px;
+  color: #0076ce;
+}
+.recommendedPara {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.recommendedPara span{
+  font-weight: bold;
+  color: #0076ce;
+}
+.recommendedDetailsContainer button{
+  border-radius: 10px;
+  background-color: #0076ce;
+  font-weight: bold;
+  color: white;
+  border: none;
+  outline: none;
+  margin-top: 25px;
+  width: 290px;
+  height: 46px;
+}
+
+/* Mobile View */
+@media (max-width: 576px) {
+  #singlePage {
+    padding: 5% 10%;
+  }
+  .recommendedContainer{
+    flex-wrap: wrap;
+  }
+  .singlePageLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .secondLeft {
+    padding: 3%;
+  }
+  .taskButtons button {
+    font-size: 13px;
+    width: 130px;
+  }
+  .secondLeft,
+  .thirdLeft {
+    width: 300px;
+  }
+
+  .singlePageContainer {
+    flex-direction: column;
+  }
+
+  .singlePageRight img {
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+  }
+
+  .singlePageRight h1 {
+    margin-top: 20px;
+  }
+
+  .singlePageContainer p {
+    font-size: 18px;
+  }
+
+  .details div {
+    width: 100px;
+  }
+  .details div p {
+    font-size: 15px;
+  }
+}
+
+/* Tablet View */
+@media (max-width: 1024px) {
+  .singlePageContainer {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .recommendedContainer{
+    flex-wrap: wrap;
+  }
+
+  .singlePageRight img {
+    width: 100%;
+    height: auto;
+  }
+
+  .singlePageRight h1 {
+    margin-top: 20px;
+  }
+
+  .singlePageContainer p {
+    font-size: 18px;
+  }
+}

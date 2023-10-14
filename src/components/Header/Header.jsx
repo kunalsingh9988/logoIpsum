@@ -1,25 +1,24 @@
 import React, { useState } from "react";
-// importing header css
-import "./Header.css";
-// importing logo svg
-import logo from "../../assets/logo.svg";
-// importing down arrow from react icons
-import { IoIosArrowDown } from "react-icons/io";
-import {FiMenu} from 'react-icons/fi'
+import "./Header.css"; // Importing the CSS for this component
+import logo from "../../assets/logo.svg"; // Importing an SVG logo
+import { IoIosArrowDown } from "react-icons/io"; // Importing the down arrow icon from 'react-icons'
+import { FiMenu } from 'react-icons/fi'; // Importing the menu icon from 'react-icons'
+import { Link } from "react-router-dom"; // Importing Link for routing
 
 const Header = () => {
-
-  const[sideBar, setSideBar] = useState(false)
+  // Using a functional component for the Header
+  const [sideBar, setSideBar] = useState(false); // Managing the state for the sidebar
 
   return (
-    // using semantic tags as it is a good practice
     <>
+      {/* Using semantic tags for header */}
       <header id="header">
-        <img src={logo} alt="" />
-        <FiMenu className="menuBar" onClick={()=>setSideBar(!sideBar)}/>
-        <nav className={sideBar?'sideNav':null}>
-          {/* nav logo */}
-          {/* using p tag instead of links because there is no need for it  */}
+        <Link to="/">
+          <img src={logo} alt="" /> {/* Displaying the logo */}
+        </Link>
+        <FiMenu className="menuBar" onClick={() => setSideBar(!sideBar)} /> {/* Menu icon with onClick event */}
+        <nav className={sideBar ? 'sideNav' : null}>
+          {/* Navigation items */}
           <p>
             Solutions
             <IoIosArrowDown className="downArrow" />{" "}
@@ -34,14 +33,14 @@ const Header = () => {
             <IoIosArrowDown className="downArrow" />
           </p>
         </nav>
-        <div className={sideBar?"headerBtnContainer active":"headerBtnContainer "}>
+        <div className={sideBar ? "headerBtnContainer active" : "headerBtnContainer "}>
+          {/* Buttons container */}
           <button className="loginBtn headerBtn">Login</button>
           <button className="registerBtn headerBtn">Register</button>
         </div>
-   
       </header>
     </>
   );
 };
 
-export default Header;
+export default Header; // Exporting the Header component as the default export

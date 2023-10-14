@@ -1,0 +1,138 @@
+#platform {
+  overflow: hidden; /* Hide overflow content */
+  margin: 10% 4% 0 8%; /* Set top, right, and left margins */
+  display: flex; /* Display as a flex container */
+}
+
+.leftPlatform {
+  width: 45%; /* Set the width of the left section */
+}
+
+.leftPlatform h1 {
+  font-size: 40px; /* Set font size for the heading */
+  font-weight: bold; /* Apply bold font weight to the heading */
+}
+
+.leftPlatform h1 span {
+  background-image: linear-gradient(65deg, #0076ce, #9400d3); /* Apply a gradient background to the text */
+  -webkit-background-clip: text; /* Clip background to text */
+  -webkit-text-fill-color: transparent; /* Make text transparent to show the background */
+}
+
+.platformPara {
+  font-size: 20px; /* Set font size for the paragraph */
+}
+
+.gridIcons {
+  display: flex; /* Display grid icons as a flex container */
+}
+
+section {
+  margin-top: 40px; /* Set top margin for sections */
+  width: 250px; /* Set the width of sections */
+  gap: 20px; /* Define gap between elements */
+  display: flex; /* Display as a flex container */
+  align-items: flex-start; /* Align items to the start of the container */
+  justify-content: center; /* Center content horizontally */
+}
+
+section p {
+  font-size: 16px; /* Set font size for paragraphs in sections */
+}
+
+section p span {
+  font-weight: bold; /* Apply bold font weight to text spans */
+}
+
+.rightPlatform {
+  width: 40vw; /* Set the width of the right platform */
+  display: flex; /* Display as a flex container */
+  flex-direction: column; /* Arrange items in a column */
+  justify-content: space-between; /* Create space between items */
+}
+
+.rightOnePlatform {
+  display: flex; /* Display right one platform as a flex container */
+  justify-content: space-between; /* Create space between items */
+}
+
+.rightTwoPlatform {
+  display: flex; /* Display right two platform as a flex container */
+  flex-direction: column; /* Arrange items in a column */
+}
+
+.rightTwoPlatform p {
+  position: relative; /* Define a relative position for paragraphs */
+  bottom: 190px; /* Adjust the bottom position */
+  left: 40px; /* Adjust the left position */
+  float: right; /* Float the paragraphs to the right */
+  text-align: end; /* Set the text alignment to the end */
+  margin-top: 10px; /* Add top margin */
+  background-color: #DDF3FF; /* Apply a background color */
+  border-radius: 15px 15px 3px 15px; /* Define border-radius */
+  padding: 5px; /* Add padding to paragraphs */
+  width: max-content; /* Set the width to fit content */
+}
+
+.maleStudent {
+  position: absolute; /* Position the male student image absolutely */
+  top: 0px; /* Set the top position */
+  /* left: 80px; (Commented out for adjustment) */
+}
+
+.platformMessages p {
+  float: right; /* Float the paragraphs to the right */
+  text-align: end; /* Set the text alignment to the end */
+  margin-top: 10px; /* Add top margin */
+  background-color: #EFD9F9; /* Apply a background color */
+  border-radius: 15px 15px 3px 15px; /* Define border-radius */
+  padding: 5px; /* Add padding to paragraphs */
+  width: max-content; /* Set the width to fit content */
+}
+
+.rightPlatform img {
+  position: relative; /* Define a relative position for images */
+  bottom: 170px; /* Adjust the bottom position */
+  left: 30px; /* Adjust the left position */
+  width: 300px; /* Set the width of images */
+}
+
+/* Media queries for tablet view */
+@media screen and (max-width: 768px) {
+  .platform {
+      padding: 10% 2% 0 2%; /* Adjust padding for responsiveness */
+  }
+  .leftPlatform {
+      text-align: center; /* Center-align text in the left platform */
+      width: 90vw; /* Adjust the width for responsiveness */
+  }
+  .rightPlatform {
+      display: none; /* Hide the right platform on smaller screens */
+  }
+  .gridIcons {
+      text-align: start; /* Start-align text in grid icons */
+      flex-direction: column; /* Arrange icons in a column */
+      align-items: center; /* Center-align items */
+      justify-content: center; /* Center content horizontally and vertically */
+  }
+}
+
+/* Media queries for mobile view */
+@media screen and (max-width: 576px) {
+  .platform {
+      padding: 10% 2% 0 2%; /* Adjust padding for responsiveness */
+  }
+  .leftPlatform {
+      text-align: center; /* Center-align text in the left platform */
+      width: 90vw; /* Adjust the width for responsiveness */
+  }
+  .rightPlatform {
+      display: none; /* Hide the right platform on smaller screens */
+  }
+  .gridIcons {
+      text-align: start; /* Start-align text in grid icons */
+      flex-direction: column; /* Arrange icons in a column */
+      align-items: center; /* Center-align items */
+      justify-content: center; /* Center content horizontally and vertically */
+  }
+}
