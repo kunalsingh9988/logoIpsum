@@ -1,0 +1,87 @@
+#blog{
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 10% 8%;
+}
+#blog h1{
+    font-weight: bold;
+    font-size: 65px;
+}
+#blog h1 span{
+    background-image: linear-gradient(to right,#0076CE,#9400D3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.peopleContainer{
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.peopleCard{
+    margin-top: 5%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 15px rgb(230, 230, 230);
+    background-color: white;
+    text-align: center;
+    border-radius: 20px;
+    width: 405px;
+    height: 266px;
+}
+.peopleCard h2{
+    font-size: 20px;
+}
+.peopleCard p{
+    margin-top: 5px;
+    font-size: 16px;
+}
+.signNo{
+    position: relative;
+    top: 0;
+    right: 0;
+    border-radius: 10px;
+    background-image: linear-gradient(to right,#0076CE,#9400D3);
+    width: 46px;
+    height: 46px;
+    text-align: center;
+    padding: 1%;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+.dateAndPrice{
+    margin-top: 25px;
+    background-color: #F4F4F4;
+    border-radius: 10px;
+    width: 341px;
+    height: 113px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: start;
+}
+.dateAndPrice h3{
+    font-size: 18px;
+    line-height: 3;
+}
+.dueDate,.price{
+    margin-bottom: 30px;
+}
+.dueDate h3{
+    color:#0076CE;
+}
+.price h3{
+    color:#FF6666;
+}
+.price p{
+
+    font-weight: bold;
+}

@@ -1,0 +1,170 @@
+#header {
+  position: relative;
+  z-index: 5;
+  padding: 0 10%;
+  height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  margin-left: -20%;
+}
+nav,
+img p {
+  cursor: pointer;
+}
+.downArrow {
+  color: #0076ce;
+  position: relative;
+  top: 3px;
+  left: 5px;
+}
+.headerBtn {
+  border-radius: 10px;
+  width: 100px;
+  height: 46px;
+  outline: none;
+  font-weight: 600;
+  font-size: 16px;
+}
+.loginBtn {
+  border: 1.5px solid #0076ce;
+  background: none;
+  color: #0076ce;
+}
+.registerBtn {
+  outline: none;
+  border: none;
+  margin-left: 10px;
+  background-color: #0076ce;
+  color: white;
+}
+.menuBar {
+  display: none;
+}
+
+/* for tablet screen  */
+@media screen and (max-width:768px) {
+    #header {
+        padding: 5%;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        margin-top: 30px;
+        align-items: flex-start;
+        background-color: white;
+        margin-left: 0;
+        width: 200px;
+        transform: translateX(-250px);
+        flex-direction: column;
+        transition: 0.3s all ease-in-out;
+      }
+      .sideNav {
+        padding: 8% 3% 0 8%;
+        margin-top: -100px;
+        transform: translateX(-50px);
+        transition: 0.3s all ease-in-out;
+      }
+      .headerBtnContainer.active {
+        padding: 3% 3% 5% 8%;
+    
+        transform: translateX(-50px);
+        transition: 0.3s all ease-in-out;
+      }
+    
+      .headerBtnContainer {
+        background-color: white;
+    
+        transform: translateX(-250px);
+        transition: 0.3s all ease-in-out;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .headerBtn {
+        margin-top: 15px;
+        width: 80px;
+        height: 35px;
+      }
+      .registerBtn {
+        margin-left: 0;
+      }
+      .menuBar {
+        font-size: 40px;
+        display: inline;
+        color: black;
+        position: absolute;
+        z-index: 6;
+        top: 40px;
+        right: 20px;
+      }
+    
+}
+
+
+
+/* for mobile screen  */
+
+@media screen and (max-width: 576px) {
+  #header {
+    padding: 5%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav {
+    margin-top: 30px;
+    align-items: flex-start;
+    background-color: white;
+    margin-left: 0;
+    width: 180px;
+    transform: translateX(-200px);
+    flex-direction: column;
+    transition: 0.3s all ease-in-out;
+  }
+  .sideNav {
+    padding: 18% 3% 0 10%;
+    margin-top: -100px;
+    transform: translateX(-20px);
+    transition: 0.3s all ease-in-out;
+  }
+  .headerBtnContainer.active {
+    padding: 0 3% 5% 10%;
+
+    transform: translateX(-20px);
+    transition: 0.3s all ease-in-out;
+  }
+
+  .headerBtnContainer {
+    background-color: white;
+
+    transform: translateX(-200px);
+    transition: 0.3s all ease-in-out;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .headerBtn {
+    margin-top: 15px;
+    width: 80px;
+    height: 35px;
+  }
+  .registerBtn {
+    margin-left: 0;
+  }
+  .menuBar {
+    font-size: 40px;
+    display: inline;
+    color: black;
+    position: absolute;
+    z-index: 6;
+    top: 20px;
+    right: 20px;
+  }
+}

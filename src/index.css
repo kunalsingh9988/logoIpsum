@@ -1,0 +1,26 @@
+/* IMP MESSAGE  */
+/* I tried everything but I was unable to integrate tailwindCSS in this project for some unkown reason. So please judge me on my custom css skills and not in tailwind css. I know the concepts of tailwind css, If a person knows original css then it is not so difficult to understand tailwind css. I would be really thankfull if you'll not judge me on tailwind css. Thankyou very much on taking your time to read this paragraph */
+
+
+
+/* importing global fonts for every page and element  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900');
+
+/* importing tailwind essentials  */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* global styling for every element  */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+/* App.jsx style  */
+#app{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
